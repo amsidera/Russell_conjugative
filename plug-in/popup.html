@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			div {
+			  height: 150px;
+				width: 125px;
+			}
+			a {
+				background-color: #4CAF50; /* Green */
+				border: none;
+				color: white;
+				padding: 8px 15px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 12px;
+				position: absolute;
+				right: 40px;
+			}
+			
+			a:hover {
+				text-decoration: underline;
+			}	
+		</style>
+	</head>
+	<body>
+	<script src="jquery.min.js"></script>
+	<script src="event.js"></script>
+	<div>
+		<form id="polarity">
+		  <input type="radio" id="polarity1" name="polarity" value="0"> Same polarity<br>
+		  <input type="radio" id="polarity2" name="polarity" value="1"> Opposite polarity<br>
+		  <input type="radio" id="polarity3" name="polarity" value="2"> Both of them <br>
+		</form> <br>
+		<select id="selection" >
+		<option value="3">--No Select--</option>
+		  <option value="0">Adjective</option>
+		  <option value="1">Verb</option>
+		  <option value="2">Noun</option>
+		</select> <br> <br>
+		<a href="" id="form">Click Me!</a>
+		<script type="text/javascript" src="event.js"></script>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+Russell Conjugative Debiased Reading
+
+The project build and deploy a prototype bias-revealing browser plug-in, which reveal hidden sources of emotive bias in news stories.
+In this project we have created a plug-in using JavaScript so that when we click on it, we will pick up the whole text of our news website.
+We pass this information to our server to process the information. 
+
+The server uses python. The information is process and will be return to our plug-in with with the adjectives highlighted and a drop-down window
+to see the russell synonyms. 
+
+Previously we have created a word dictionary using 17.000 new web pages that collected ourselves. In this dictionary, we have each word and 
+polarity sentiment level. The polarity is normalize between +1 (maximum positive level) and -1 (maximum negative level). 
+To create this dictionary we have analysed each of the phrases of the 17,000 web pages. And created a dictionary of polarity depending on 
+certain aspects that are given in each sentence like: negation, question marks, capital letters or the position in the sentence.
+
+To be able to use the program you must have the server running in some computer interface and the plug-in must be in a Chrome browser.
+
+Author: Ana Maria Martinez Sidera

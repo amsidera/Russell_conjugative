@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Python Chrome Plugin",
+  "description": "This extension runs Python code.",
+  "version": "1.0",
+ 
+  "browser_action": {
+    "default_icon": "img/iitlogo.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+	"<all_urls>",
+    "https://ajax.googleapis.com/", 
+	"tabs",
+	"notifications",
+	"http://*/",
+	"https://*/"
+  ],
+  "background": {
+    "scripts": [
+      "event.js", "content.js", "request.js"
+    ],
+	"persistent": false 
+	},
+  "content_scripts": [{
+     "js": ["jquery.min.js", "event.js", "content.js"],
+     "matches": ["http://*/*", "https://*/*"], 
+	 "run_at": "document_end"
+   }],
+   "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+}
